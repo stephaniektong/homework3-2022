@@ -111,9 +111,9 @@ nav a:focus{
 
 /* Requirements 6-10 here: */
 .intro{
-  background-color: #B3B3B3;
+  background-color: #DDDDDD;
   background-image: url("images/header.jpg");
-  background-attachment: fixed;
+  background-attachment: fixed; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -168,8 +168,8 @@ img{
 }
 
 .text{
-  align-self: center;
-  max-height: 0.25vh;
+  align-content: center;
+  max-height: 25vh;
   overflow: scroll;
   position: relative;
 }
@@ -185,7 +185,8 @@ img{
   nav li{
     margin-left: 5%;
     margin-right:0;
-    align-self: right;
+    /* align-self: right; */
+    float: right;
   }
 
   /* Requirements 12-15 here: */
