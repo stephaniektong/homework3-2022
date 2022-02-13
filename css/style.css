@@ -111,7 +111,7 @@ nav a:focus{
 
 /* Requirements 6-10 here: */
 .intro{
-  background-color: #DDDDDD;
+  background-color: #707070;
   background-image: url("images/header.jpg");
   background-attachment: fixed; 
   background-position: center;
@@ -123,10 +123,11 @@ nav a:focus{
 .about, .clients, .method, .contact{
   grid-column: 2 / span 1;
   z-index: 1;
+  align-self:center;
+  justify-self: center;
 }
 .about{
   grid-row: 1;
-  height:auto;
 }
 .clients{
   grid-row: 2;
@@ -152,7 +153,6 @@ img{
 
 .about-image{
   grid-row: 1;
-  justify-content: center;
 }
 
 .clients-image{
@@ -168,7 +168,7 @@ img{
 }
 
 .text{
-  align-content: center;
+  align-self: center;
   max-height: 25vh;
   overflow: scroll;
   position: relative;
@@ -178,7 +178,8 @@ img{
   nav{
     padding-top: 35px;
     /*Requirement 11*/
-    align-self: right;
+    justify-self: right;
+    text-align: right;
 
   }
 
@@ -186,7 +187,9 @@ img{
     margin-left: 5%;
     margin-right:0;
     /* align-self: right; */
-    float: right;
+    /* float: right; */
+    justify-self: right;
+    text-align: center;
   }
 
   /* Requirements 12-15 here: */
