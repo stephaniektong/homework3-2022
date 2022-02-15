@@ -112,7 +112,7 @@ nav a:focus{
 /* Requirements 6-10 here: */
 .intro{
   background-color: #707070;
-  background-image: url("images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-attachment: fixed; 
   background-position: center;
   background-repeat: no-repeat;
@@ -126,20 +126,6 @@ nav a:focus{
   align-self:center;
   justify-self: center;
 }
-.about{
-  grid-row: 1;
-}
-.clients{
-  grid-row: 2;
-}
-
-.method{
-  grid-row: 3;
-}
-
-.contact{
-  grid-row: 4;
-}
 img{
   width: 100%;
 }
@@ -151,20 +137,19 @@ img{
   z-index: 0;
 }
 
-.about-image{
-  grid-row: 1;
+.about, .about-image{
+  grid-row: 1 / span 1;
+}
+.clients, .clients-image{
+  grid-row: 2 / span 1;
 }
 
-.clients-image{
-  grid-row: 2;
+.method, .method-image{
+  grid-row: 3 / span 1;
 }
 
-.method-image{
-  grid-row: 3;
-}
-
-.contact-image{
-  grid-row: 4;
+.contact, .contact-image{
+  grid-row: 4 / span 1;
 }
 
 .text{
